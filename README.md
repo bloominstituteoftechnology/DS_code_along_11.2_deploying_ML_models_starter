@@ -4,7 +4,9 @@
 
 1) Clone the repository and change directories to the outer project folder:
 
-`cd spotify_app`
+`git clone git@github.com:bloominstituteoftechnology/DS_code_along_11.2_deploying_ML_models_starter.git`
+
+`cd DS_code_along_11.2_deploying_ML_models_starter`
 
 2) Ensure that all dependencies are properly installed:
 
