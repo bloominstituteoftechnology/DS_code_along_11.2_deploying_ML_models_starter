@@ -1,12 +1,10 @@
-# spotify_app
+# Spotify_ML
 
 ### Startup Instructions
 
 1) Clone the repository and change directories to the outer project folder:
 
-`git clone git@github.com:bloominstituteoftechnology/DS_code_along_11.2_deploying_ML_models_starter.git`
-
-`cd DS_code_along_11.2_deploying_ML_models_starter`
+`cd Spotify_ML`
 
 2) Ensure that all dependencies are properly installed:
 
@@ -20,8 +18,17 @@
 
 `flask run`
 
-5) Contrary to best practices, this solution app **does** include a `.env` file with active API Keys. This is to make it easier for the instructor to show the learners a working version of the app. Learners will need to create their own `.env` file and obtain [API keys from Spotify.](https://developer.spotify.com/dashboard/login)  
+5) Obtain [API keys from Spotify.](https://developer.spotify.com/dashboard/login) and put them in a `.env` file
 
-6) Visit the `/reset` route to generate the `db.sqlite3` file.
+`touch .env`
 
-[127.0.0.1:5000/reset](http://127.0.0.1:5000/reset)
+```
+FLASK_APP=spotify_app
+FLASK_DEBUG=1
+CLIENT_ID=YOUR_CLIENT_ID_HERE
+CLIENT_SECRET=YOUR_CLIENT_SECRET_HERE
+```
+
+6) Visit `localhost:5000` to view the running app
+
+[127.0.0.1:5000/](http://127.0.0.1:5000/)
